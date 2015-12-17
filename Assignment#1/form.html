@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Form Page</title>
+
+</head>
+<body  >
+
+ 
+	<form action="" method="post" >
+       <fieldset>
+  <legend> Your Face </legend>
+  Your Image: <input type= "file" name "img"    required=" yes"    > <br>
+   Image Preview: <img id=" preview"   >
+</fieldset>
+
+<fieldset>
+<legend> Your General Details </legend>
+Name: <input type="text" name="name" required> <br>
+Gender: <input type="radio" name="male" value="Male"> Male
+<input type="radio" name="Female" value="Female"> Female  <br>
+Age: <input type="number" name="age"> <br>
+Date of birth:<input type="date" name="date"><br>
+Favorite Color:<input type="color"><br>
+Which Country: <Select "Country"> 
+<option value="no"> no selection  </option>
+<option value="Pak"> Pakistan</option>
+<option value="ch"> China  </option>
+<option value="fr"> France  </option>
+<option value="UK"> United Kingdom  </option>
+
+</select>
+
+
+
+</fieldset>
+<fieldset>
+<legend> Your Indicators </legend>
+Height: <input type="range" min="0" max="100">
+Salary: <input type="range" min="0" max="100">
+
+</fieldset>
+
+<fieldset>
+<legend> Your Contact Information </legend>
+Email:<input type= "email" name="email"  > <br>
+Mobile:<input type="tel"> <br>
+Address:<textarea  rows="4"  cols="40" name="address">
+<br>
+Methode to contact you:
+<input type="checkbox" name="Email" required> Email
+<input type="checkbox" name="WhatsApp"> Whatsapp
+
+<input type="checkbox" name="InAppchat"> In-app chat
+</fieldset>
+	</form>
+
+</body>
+</html>

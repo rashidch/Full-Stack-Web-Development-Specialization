@@ -1,0 +1,92 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+  <title>  My Webpage  </title>
+   <meta name="author" content=" Rashid Ali">
+   <meta name="keywords" content="HTML,CSS">
+   <meta charset= " UTF-8">
+  
+   <style>
+   fieldset{background:lightyellow     }
+   fieldset{ width:720px}
+    fieldset{ border:10px solid yellow}
+	fieldset{ margin-bottom:10px }
+   label{width:180px}
+   label{display:inline-block }
+   label{ text-align:right top}
+   textarea{width:360px height:50px}
+   #w{width:200px}
+   </style>
+  
+    
+</head>
+<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+<body>
+
+<h1> Please Enetr Your Details For Our Dating Website </h1>
+
+<form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php " methode="post">
+
+<fieldset>
+  <legend> Your Face </legend>
+  <label for="avatar">Your image:</label>
+  <input type="file" id="avatar" name="avatar" required>
+  <br>
+   <label for="preview"> Image Preview:</label>
+   
+</fieldset>
+
+<fieldset>
+<legend> Your General Details </legend>
+ <label for="name">Name:</label>
+ <input type="text" id="w" name="name" required> <br >
+ <label for="gender">Gender:</label>
+  <input type="radio" name="sex" value="Male"  required>  Male 
+ <input type="radio" name="sex" value="Female"  required> Female  <br>
+  <label for="age">Age:</label>
+ <input type="number" id="w" name="age" required> <br>
+  <label for="birth">Date of birth:</label>
+<input type="date" id="w" name="date"><br>
+ <label for="color">Favorite Color:</label>
+<input type="color"  name="color"><br>
+<label for="country">Which Country:</label>
+ <Select "Country" id="w"> 
+<option value="no"> no selection  </option>
+<option value="Pak"> Pakistan</option>
+<option value="ch"> China  </option>
+<option value="fr"> France  </option>
+<option value="UK"> United Kingdom  </option>
+<option value="Ir"> Iran </option>
+</select>
+</fieldset>
+
+<fieldset>
+<legend> Your Indicators </legend>
+<label for="height">Height:</label>Short
+<input type="range" min="0" max="100">Tall <br>
+<label for="salary">Salary:</label> Poor
+<input type="range" min="0" max="100">Rich
+
+</fieldset>
+
+<fieldset>
+<legend> Your Contact Information </legend>
+<label for="email">Email:</label>
+<input type= "email"  id="w" name="email"  > <br>
+<label for="tel">Mobile:</label>
+<input type="tel" id="w"> <br>
+<label for="address">Address:</label>
+<textarea rows="2" id="w" cols="22" name="address" ></textarea> <br>
+<label for="contact">Method to contact you:</label>
+<input type="checkbox" name="email" required> Email
+<input type="checkbox" name="whatsApp"> Whatsapp
+<input type="checkbox" name="inAppchat"> In-app chat
+<br>
+
+</fieldset>
+<input type="submit" name="submit" value="submit">
+</form>
+</body>
+
+</html>
