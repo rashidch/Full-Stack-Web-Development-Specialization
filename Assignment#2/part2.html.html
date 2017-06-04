@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<body>
+        <script>
+
+        var guess_input_text;
+        var guess_input;
+        var target;
+        var guesses=0;
+        var finished= false;
+
+
+
+          color=[" blue","cyan", "gold", "gray","green","orange","red \n","white","yellow","aliceBlue","antiqueWhite","aqua","azure","beige\n","bisque","black","blanchedAlmond"]
+
+          var random_number= Math.random()*9;
+          var random_number_integer= Math.floor(random_number);
+          target= random_number_integer+1;
+           target_color= color[target];
+          alert(target_color);
+           while (!finished)
+           {
+
+                    guess_input_text= prompt(" I am thinking of one of these colors:\n "+ color.sort() +" \n What color am I thinking of?")
+
+                    guess_input= guess_input_text;
+                    guesses+=1;
+
+                    if(color.indexOf(guess_input)==-1)
+                    {
+                        alert("Sorry, I don't recongnize your color. \n Please try again.")
+                        finished= false;
+
+                    }
+
+                  else
+                  {
+                            if (guess_input> target_color)
+                            {
+                              alert(" Sorry, your guess is not correct! \n Hint: your color is alphatically higher than mine. \n Please try again")
+                              finished=false;
+
+                            }
+                            else if(guess_input< target_color)
+                            {
+                              alert(" Sorry, your guess is not correct! \n Hint: your color is alphatically lower than mine. \n Please try again")
+                              finished= false;
+                            }
+                           else if (guess_input== target_color)
+                           {
+
+                               alert(" Congratulations! You have guessed the color! \n It took ="+guesses+" guesses to finish the game!");
+                               myBody=document.getElementsByTagName("body")[0];
+                               myBody.style.background= target_color;
+                               finished=true;
+
+                           }
+
+                  }
+
+
+          }
+
+
+
+
+</script>
+
+</body>
+</html>

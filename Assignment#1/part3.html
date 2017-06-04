@@ -18,7 +18,20 @@
    #w{width:200px}
    label:hover { font-size:20px }
    input:hover{ font-size:20px }
-   </style>    
+   .lowerRange {
+            background-color: red;
+            color: white;
+            text-align: center;
+            padding: 3px;
+           }
+
+        .higherRange {
+            background-color: purple;
+            color: white;
+            text-align: center;
+            padding: 3px;
+        }
+   </style>
 </head>
 <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
 <body>
@@ -50,7 +63,7 @@
  <label for="color">Favorite Color:</label>
 <input type="color"  name="color"><br>
 <label for="country">Which Country:</label>
- <Select "Country" id="w"> 
+ <Select "Country" id="w">
 <option value="no"> no selection  </option>
 <option value="Pak"> Pakistan</option>
 <option value="ch"> China  </option>
@@ -62,10 +75,10 @@
 
 <fieldset>
 <legend> Your Indicators </legend>
-<label for="height">Height:</label>Short
-<input type="range" min="0" max="100">Tall <br>
-<label for="salary">Salary:</label> Poor
-<input type="range" min="0" max="100">Rich
+<label for="height">Height:</label> <span class="lowerRange"> Short </span>
+<input type="range" min="0" max="100"><span class="higherRange"> Tall </span> <br>
+<label for="salary">Salary:</label><span class="lowerRange"> Poor </span>
+<input type="range" min="0" max="100"><span class="higherRange"> Rich </span>
 
 </fieldset>
 
